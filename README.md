@@ -27,3 +27,4 @@ Merci à tous ceux qui ont contribué à l'élaboration de ce modèle de rapport
 * Jean-Pascal McGee
 * Pascal Vaillancourt
 * Alexander Selivanov
+* [Antoine Morin-Paulhus (antoineMoPa)](https://github.com/antoineMoPa)
