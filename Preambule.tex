@@ -1,0 +1,88 @@
+% Packages utilisés dans le rapport
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{tabularx} % in the preamble
+\usepackage{titlesec, blindtext, color}
+\usepackage{xfrac}
+\usepackage{listings}
+\usepackage{geometry}
+\usepackage{caption}
+
+% Modification des marges 
+\geometry{top=3cm}
+\geometry{bottom=3cm}
+
+% Chemin pour les images
+\graphicspath{ {Images/} }
+
+% Nouvelles couleurs
+\definecolor{forestgreen}{rgb}{0.13, 0.55, 0.13}
+
+% Définition de langage pour le pseudocode
+\lstdefinelanguage{Pseudocode}
+{
+  % list of keywords
+  morekeywords={
+  	DÉBUT,
+    FIN,
+    FONCTION,
+    SI,
+    SINON,
+    ALORS,
+    POUR,
+    TANT QUE,
+    FAIRE  },
+  sensitive=false, % keywords are not case-sensitive
+  morecomment=[l]{//}, % l is for line comment
+  morecomment=[s]{/*}{*/}, % s is for start and end delimiter
+  morestring=[b]" % defines that strings are enclosed in double quotes
+}
+
+\lstset{
+  language={Pseudocode},
+  basicstyle=\small\ttfamily, % Global Code Style
+  captionpos=b, % Position of the Caption (t for top, b for bottom)
+  extendedchars=true, % Allows 256 instead of 128 ASCII characters
+  tabsize=2, % number of spaces indented when discovering a tab 
+  columns=fixed, % make all characters equal width
+  keepspaces=true, % does not ignore spaces to fit width, convert tabs to spaces
+  showstringspaces=false, % lets spaces in strings appear as real spaces
+  breaklines=true, % wrap lines if they don't fit
+  frame=trbl, % draw a frame at the top, right, left and bottom of the listing
+  frameround=tttt, % make the frame round at all four corners
+  framesep=4pt, % quarter circle size of the round corners
+  numbers=left, % show line numbers at the left
+  numberstyle=\tiny\ttfamily, % style of the line numbers
+  commentstyle=\color{forestgreen}, % style of comments
+  keywordstyle=\color{blue}, % style of keywords
+  stringstyle=\color{purple}, % style of strings
+}
+
+% Police sans-serif
+\renewcommand{\familydefault}{\sfdefault}
+
+% Style de la table des matières cliquable
+\hypersetup{
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=black
+}
+
+% Style des chapitres
+\newcommand{\sizetwelvefixed}{\fontsize{12}{14.4}\selectfont}
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\Large\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Large\bfseries}
+\titlespacing{\chapter}{0pt}{-2cm}{1cm}
+
+% Tableaux
+\addto\captionsfrench{\def\tablename{\bf{Tableau }}}
+\captionsetup{labelsep=colon}

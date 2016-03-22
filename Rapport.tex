@@ -1,43 +1,19 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Modèle de rapport en LaTeX pour GI - UdeS             %%
-%% Université de Sherbrooke, 2015                        %%
+%% Université de Sherbrooke, 2015-2016                   %%
 %%                                                       %%
 %% Auteurs:                                              %%
 %%   Jean-Pascal McGee                                   %%
 %%   Pascal Vaillancourt                                 %%
 %%   Alexander Selivanov                                 %%
 %%   Tommy Savaria                                       %%
+%%   Antoine Morin-Paulhus                               %%
 %%                                                       %%
-%% https://gitlab.com/TommySavaria/Modele-Rapport-GIUDES %%
+%% https://github.com/NewLunarFire/Modele-Rapport-GIUDES %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[letter,11pt]{report}
-\usepackage[utf8]{inputenc}
-\usepackage[francais]{babel}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage{amsmath}
-\usepackage{mathtools}
-\usepackage{graphicx}
-\graphicspath{ {Images/} }
-\usepackage{hyperref}
-\usepackage{tabularx} % in the preamble
-\usepackage{titlesec, blindtext, color}
-
-% Style de la table des matières cliquable
-\hypersetup{
-    colorlinks,
-    citecolor=black,
-    filecolor=black,
-    linkcolor=black,
-    urlcolor=black
-}
-
-% Style des chapitres
-\newcommand{\sizetwelvefixed}{\fontsize{12}{14.4}\selectfont}
-\definecolor{gray75}{gray}{0.75}
-\newcommand{\hsp}{\hspace{20pt}}
-\titleformat{\chapter}[hang]{\Large\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Large\bfseries}
+\input{Preambule}
 
 \begin{document}
 \begin{titlepage}
@@ -62,14 +38,42 @@
 
 \end{titlepage}
 
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+\renewcommand{\contentsname}{Sommaire}
 \tableofcontents
 \setlength{\parskip}{1em}
 
+\newpage
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
 % Chapitre 1
-\chapter{Chapitre}
+\section{Les rhinocéros}
+Nous savons que les LED causent des maux de tête aux chercheurs \cite{FuturaDEL2}
+
+\section{Exemple de tableau}
+
+\begin{table}
+  \begin{center}
+    \caption{vitesse, $\lambda$ et résultats}
+    \begin{tabular}{ccc}
+      \hline
+      \bf vitesse (m) & \bf $\lambda (t)$ & \bf résultat ($\Omega$) \\
+      \hline
+      \hline
+      1 & 2 & 3.8 \\
+      5 & 2 & 3 \\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{table}
 
 % Bibliographie
 \bibliographystyle{ieeetran-fr}
 \bibliography{IEEEabrv,Bibliographie}
 
 \end{document}
+
