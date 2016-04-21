@@ -1,6 +1,6 @@
 # Modèle rapport Gi - UdeS
 ![](https://travis-ci.org/NewLunarFire/Modele-Rapport-GIUDES.svg?branch=master)
-
+![](https://img.shields.io/badge/license-LPPL-blue.svg)
 
 Copyright 2015 Tommy Savaria
 
