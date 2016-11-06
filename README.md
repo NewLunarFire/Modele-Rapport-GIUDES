@@ -7,6 +7,9 @@ Copyright 2015 Tommy Savaria
 ## Description ##
 Ce modèle vous permet de vous lancer rapidement dans la production de vos rapports d'APP en générant un document respectant les normes de présentation exigées par la compétence *GEN111 Communication écrite*.
 
+## Importer dans Overleaf ##
+Vous pouvez importer le projet dans Overleaf, en choisissant l'option importer et en copiant le lien suivant. Cela créera automatiquement un nouveau rapport depuis le modèle: https://github.com/NewLunarFire/Modele-Rapport-GIUDES/releases/download/1.0/Modele-Rapport-GIUDES.zip
+
 ## Wiki ##
 Le Wiki contient des ressources, des informations utiles et des bouts de codes pour vous aider à rédiger vos rapports. Allez y faire un tour.
 
